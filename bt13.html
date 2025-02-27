@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let giveMoney = +prompt ("Nhập số tiền gửi(VND)");
+        let month = +prompt ("Nhập số tháng gửi");
+        if (giveMoney <= 0 || month <= 0 ){
+            giveMoney = +prompt ("Nhập lại số tiền gửi(VND)");
+            month = +prompt ("Nhập lại số tháng gửi");
+        }
+        let interest = giveMoney * month * 43/100/12;
+        let interest2 = interest.toLocaleString();
+
+        alert (`Số tiền lãi nhận được là ${interest2} `);
+
+    </script>
+</body>
+</html>
